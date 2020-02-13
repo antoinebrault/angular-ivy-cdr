@@ -1,0 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 14px;
+}
+
+$ag-mat-icons-path: '~@ag-grid-community/all-modules/dist/styles/ag-theme-material/icons/';
+$ag-icons-path: '~@ag-grid-community/all-modules/dist/styles/ag-theme-base/icons/';
+
+@import '~@ag-grid-community/all-modules/dist/styles/ag-grid';
+@import '~@ag-grid-community/all-modules/dist/styles/ag-theme-material/sass/ag-theme-material';
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
