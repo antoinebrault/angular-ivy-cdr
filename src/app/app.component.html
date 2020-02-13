@@ -1,5 +1,8 @@
+<ng-template #templateStatus>
+  inside templateRef: {{ test }}
+</ng-template>
+
 <app-table [templateStatus]="templateStatus"></app-table>
 
-<ng-template #templateStatus>
-  {{ test }}
-</ng-template>
+<br/>
+outside template: {{ test }}

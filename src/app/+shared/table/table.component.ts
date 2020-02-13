@@ -4,7 +4,6 @@ import { TemplateStatusComponent } from './template-status.component';
 
 @Component({
   selector: 'app-table',
-  exportAs: 'table',
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -25,7 +24,7 @@ export class TableComponent implements OnInit {
       this.statusBar.statusPanels.push({
         statusPanel: 'templateStatus',
         statusPanelParams: { template: this.templateStatus },
-        align: 'right'
+        align: 'left'
       });
     }
   }
