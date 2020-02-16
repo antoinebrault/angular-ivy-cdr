@@ -13,8 +13,6 @@ export class AppComponent {
     setTimeout(() => {
       this.test = 'test updated';
       this.cdr.detectChanges();
-
-      console.log('should update');
-    }, 5000)
+    }, 2000);
   }
 }

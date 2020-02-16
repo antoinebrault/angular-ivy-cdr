@@ -7,15 +7,12 @@ export interface TemplateStatusPanelParams extends IStatusPanelParams {
 
 @Component({
   selector: 'app-template-status-component',
-  template: `
-    <ng-container *ngTemplateOutlet="this.params.template"></ng-container>
-  `,
-  styleUrls: ['./template-status.component.scss']
+  template: `<ng-container *ngTemplateOutlet="this.params.template"></ng-container>`
 })
 export class TemplateStatusComponent {
   params: TemplateStatusPanelParams;
 
-  agInit(params: TemplateStatusPanelParams): void {
+  agInit(params: TemplateStatusPanelParams) {
     this.params = params;
   }
 }
